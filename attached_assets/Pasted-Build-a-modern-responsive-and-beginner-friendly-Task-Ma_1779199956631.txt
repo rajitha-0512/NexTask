@@ -1,0 +1,169 @@
+Build a modern, responsive, and beginner-friendly **Task Management Web Application** called **TaskFlow**.
+
+# Goal
+
+Create a full-stack task management application where users can:
+
+* Sign up and log in securely
+* Create tasks
+* View tasks
+* Edit tasks
+* Delete tasks
+* Mark tasks as completed
+
+The application should be easy to build, easy to deploy, mobile responsive, and suitable for internship submission.
+
+# Tech Stack
+
+Frontend:
+
+* HTML5
+* CSS3
+* TypeScript
+
+Backend & Database:
+
+* Supabase
+
+Use Supabase for:
+
+* Authentication
+* Database
+* API integration
+* Row Level Security (RLS)
+
+Deployment:
+
+* Frontend on [Netlify](https://www.netlify.com?utm_source=chatgpt.com) or [Vercel](https://vercel.com?utm_source=chatgpt.com)
+* Backend and database handled by Supabase
+
+# Authentication Features
+
+Implement:
+
+* User signup
+* User login
+* Logout functionality
+* Session persistence
+* Protected dashboard access
+
+Use Supabase Authentication.
+
+# Database Requirements
+
+Create a `tasks` table with:
+
+```sql id="7l4d0n"
+id
+title
+description
+status
+created_at
+user_id
+```
+
+Requirements:
+
+* Each task belongs to the logged-in user
+* Users should only access their own tasks
+* Enable Row Level Security policies
+
+# Task Management Features
+
+Users should be able to:
+
+* Add tasks
+* Edit tasks
+* Delete tasks
+* Mark tasks as completed
+* View all tasks
+* Filter tasks by status
+* Search tasks
+
+Task statuses:
+
+* Pending
+* In Progress
+* Completed
+
+# UI Requirements
+
+Design a modern interface with:
+
+* Responsive layout for desktop and mobile
+* Navigation bar
+* Task cards
+* Task creation/edit form
+* Status badges
+* Empty-state UI
+* Loading indicators
+* Toast notifications
+* Delete confirmation popup
+
+Use:
+
+* Dark glassmorphism UI
+* Blue and cyan accent colors
+* Rounded cards
+* Soft shadows
+* Smooth hover effects
+* Simple animations
+* Clean typography
+
+# Project Structure
+
+```txt id="4mbc0l"
+taskflow/
+│
+├── index.html
+├── login.html
+├── signup.html
+├── dashboard.html
+│
+├── css/
+│   └── style.css
+│
+├── ts/
+│   ├── auth.ts
+│   ├── dashboard.ts
+│   ├── tasks.ts
+│   └── supabase.ts
+│
+├── assets/
+│
+├── package.json
+└── tsconfig.json
+```
+
+# Additional Features
+
+Include:
+
+* Dashboard statistics
+
+  * Total tasks
+  * Completed tasks
+  * Pending tasks
+* User profile dropdown
+* Modern professional UI
+* Smooth transitions
+
+# Important Instructions
+
+* Keep the code beginner-friendly and clean
+* Use modular TypeScript files
+* Add comments where necessary
+* Avoid unnecessary frameworks
+* Make deployment simple
+* Ensure responsive design
+* Generate production-ready UI
+
+# Expected Outcome
+
+The final application should:
+
+* Look professional and modern
+* Demonstrate full-stack development concepts
+* Work smoothly on mobile and desktop
+* Be easy to deploy and maintain
+* Be suitable for internship submission and GitHub portfolio showcase
