@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+  <path d="M100 20 L40 100 H90 L80 180 L160 80 H110 L120 20 Z" fill="url(#cyan-glow)" filter="drop-shadow(0px 0px 10px rgba(0, 242, 254, 0.5))" />
+</svg>
